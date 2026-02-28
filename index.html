@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CreativeSpace Studio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">✦ CreativeSpace</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active" onclick="showSection('home', this)">Home</a></li>
+      <li><a href="#profile" class="nav-link" onclick="showSection('profile', this)">Our Profile</a></li>
+      <li><a href="#portfolios" class="nav-link" onclick="showSection('portfolios', this)">Portfolios</a></li>
+      <li><a href="#message" class="nav-link" onclick="showSection('message', this)">Message Us</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <!-- ======================== HOME ======================== -->
+  <section id="home" class="section active">
+
+    <div class="hero">
+      <div class="hero-text">
+        <p class="hero-greeting">Welcome to CreativeSpace ✦</p>
+        <h1 class="hero-title">Hi, <span id="username-display">Grace</span>!</h1>
+        <p class="hero-subtitle">We craft beautiful designs & creative solutions that make brands unforgettable.</p>
+        <div class="hero-btns">
+          <button class="btn-primary" onclick="showSection('portfolios', null)">See Our Work</button>
+          <button class="btn-outline" onclick="showSection('message', null)">Contact Us</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="blob">
+          <div class="inner-blob">
+            <span>Design</span>
+            <span>Create</span>
+            <span>Inspire</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-item">
+        <h2>150+</h2>
+        <p>Projects Done</p>
+      </div>
+      <div class="stat-item">
+        <h2>80+</h2>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-item">
+        <h2>5+</h2>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-item">
+        <h2>12</h2>
+        <p>Awards Won</p>
+      </div>
+    </div>
+
+    <div class="services">
+      <h2 class="section-title">What We Do</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>Brand Identity</h3>
+          <p>Logos, color systems, and brand guidelines that tell your story.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>UI/UX Design</h3>
+          <p>Beautiful, intuitive interfaces that users love to interact with.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📸</div>
+          <h3>Visual Content</h3>
+          <p>Photography direction, illustration, and motion graphics.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ======================== OUR PROFILE ======================== -->
+  <section id="profile" class="section">
+
+    <div class="profile-banner">
+      <div class="banner-overlay">
+        <h1>Our Profile</h1>
+        <p>A creative studio built on passion, purpose & precision.</p>
+      </div>
+    </div>
+
+    <div class="profile-content">
+
+      <div class="about-block">
+        <div class="about-text">
+          <span class="tag">About Us</span>
+          <h2>We are CreativeSpace Studio</h2>
+          <p>Founded in 2019, CreativeSpace Studio is a creative design agency based in Jakarta, Indonesia. We specialize in brand identity, UI/UX design, and visual storytelling for businesses of all sizes — from startups to established enterprises.</p>
+          <p>Our team of passionate designers, developers, and strategists work hand-in-hand to create compelling visual experiences that connect brands with their audiences.</p>
+        </div>
+        <div class="about-visual">
+          <div class="about-img-placeholder">
+            <span>📍 Jakarta, Indonesia</span>
+            <span>Est. 2019</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hq-block">
+        <h2 class="section-title">Our Headquarter</h2>
+        <div class="hq-grid">
+          <div class="hq-card">
+            <div class="hq-img">🏢</div>
+            <h3>Jakarta</h3>
+            <p>Jl. Sudirman No. 45, Jakarta Selatan</p>
+          </div>
+          <div class="hq-card">
+            <div class="hq-img">🏢</div>
+            <h3>Bandung</h3>
+            <p>Jl. Braga No. 12, Bandung Tengah</p>
+          </div>
+          <div class="hq-card">
+            <div class="hq-img">🏢</div>
+            <h3>Surabaya</h3>
+            <p>Jl. Pemuda No. 88, Surabaya</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vision-mission">
+        <div class="vm-card vision">
+          <div class="vm-icon">🔭</div>
+          <h3>Our Vision</h3>
+          <p>To become Southeast Asia's most trusted creative partner — empowering brands through design that inspires, connects, and endures.</p>
+        </div>
+        <div class="vm-card mission">
+          <div class="vm-icon">🎯</div>
+          <h3>Our Mission</h3>
+          <ul>
+            <li>Deliver exceptional design solutions tailored to each client's unique needs</li>
+            <li>Foster a culture of creativity, collaboration, and continuous growth</li>
+            <li>Build long-lasting partnerships based on trust and results</li>
+            <li>Stay ahead of design trends while remaining true to timeless principles</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================== PORTFOLIOS ======================== -->
+  <section id="portfolios" class="section">
+    <div class="portfolio-header">
+      <span class="tag">Our Work</span>
+      <h1>Portfolios</h1>
+      <p>A selection of projects we're proud to have created.</p>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <div class="portfolio-thumb thumb-1">
+          <div class="portfolio-overlay">
+            <h3>Lumina Brand</h3>
+            <p>Brand Identity</p>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Lumina Brand Identity</h3>
+          <span class="portfolio-tag">Branding</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-thumb thumb-2">
+          <div class="portfolio-overlay">
+            <h3>Toko Segar App</h3>
+            <p>UI/UX Design</p>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Toko Segar Mobile App</h3>
+          <span class="portfolio-tag">UI/UX</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-thumb thumb-3">
+          <div class="portfolio-overlay">
+            <h3>Artwave Campaign</h3>
+            <p>Visual Content</p>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Artwave Campaign</h3>
+          <span class="portfolio-tag">Visual</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-thumb thumb-4">
+          <div class="portfolio-overlay">
+            <h3>NovaCorp Website</h3>
+            <p>Web Design</p>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>NovaCorp Website</h3>
+          <span class="portfolio-tag">Web Design</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-thumb thumb-5">
+          <div class="portfolio-overlay">
+            <h3>GreenLife Packaging</h3>
+            <p>Packaging Design</p>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>GreenLife Packaging</h3>
+          <span class="portfolio-tag">Packaging</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-thumb thumb-6">
+          <div class="portfolio-overlay">
+            <h3>Bloom Social Kit</h3>
+            <p>Social Media</p>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Bloom Social Media Kit</h3>
+          <span class="portfolio-tag">Social Media</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== MESSAGE US ======================== -->
+  <section id="message" class="section">
+    <div class="message-container">
+      <div class="message-left">
+        <span class="tag">Get In Touch</span>
+        <h1>Message Us</h1>
+        <p>Have a project in mind? We'd love to hear from you. Fill in the form and we'll get back to you shortly.</p>
+
+        <div class="contact-info">
+          <p>📧 hello@creativespace.id</p>
+          <p>📞 +62 812 3456 7890</p>
+          <p>📍 Jakarta, Indonesia</p>
+        </div>
+
+        <div id="form-result" class="form-result" style="display:none;">
+          <h3>✅ Message Received!</h3>
+          <div id="result-content"></div>
+        </div>
+      </div>
+
+      <div class="message-right">
+        <div class="form-card">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="f-name" placeholder="e.g. Grace Rajagukguk" />
+            <span class="error-msg" id="err-name"></span>
+          </div>
+
+          <div class="form-group">
+            <label>Sample Date *</label>
+            <input type="date" id="f-date" />
+            <span class="error-msg" id="err-date"></span>
+          </div>
+
+          <div class="form-group">
+            <label>Gender *</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="gender" value="Lady" /> Lady
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="gender" value="Lord" /> Lord
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="gender" value="Prefer not to say" /> Prefer not to say
+              </label>
+            </div>
+            <span class="error-msg" id="err-gender"></span>
+          </div>
+
+          <div class="form-group">
+            <label>Message *</label>
+            <textarea id="f-message" rows="4" placeholder="Tell us about your project..."></textarea>
+            <span class="error-msg" id="err-message"></span>
+          </div>
+
+          <button class="btn-submit" onclick="submitForm()">Send Message ✦</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>✦ CreativeSpace Studio &copy; 2025 — Made with passion in Jakarta</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
